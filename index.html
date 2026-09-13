@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Recipe Generator Pro</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+
+            <h1>🍲 Smart Recipe Generator Pro</h1>
+
+            <button id="darkModeBtn">
+                🌙 Dark Mode
+            </button>
+
+        </header>
+
+        <!-- Search Section -->
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search recipe name or ingredients (e.g. maggi OR egg,onion,salt)">
+
+            <button id="searchBtn">
+                Search
+            </button>
+
+        </div>
+
+        <!-- Live Suggestions -->
+
+        <div id="suggestions"></div>
+
+        <!-- Loading -->
+
+        <div id="loader" class="loader"></div>
+
+        <!-- Search History -->
+
+        <section class="history-section">
+
+            <h2>🕒 Recent Searches</h2>
+
+            <div id="history"></div>
+
+        </section>
+
+        <!-- Favorites -->
+
+        <section class="favorite-section">
+
+            <h2>❤️ Favorite Recipes</h2>
+
+            <div id="favorites"></div>
+
+        </section>
+
+        <!-- Results -->
+
+        <section>
+
+            <h2>🍴 Recipes</h2>
+
+            <div id="result" class="recipe-grid"></div>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
